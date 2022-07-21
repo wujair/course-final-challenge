@@ -63,9 +63,8 @@ button:hover,
 button:focus {
   opacity: 0.75;
 }
-h1,
-h2,
-h3 {
+h1,h2,h3,h4 {
+  font-family: 'Oswald', sans-serif;
   margin: 0;
 }
 p {
@@ -168,6 +167,7 @@ nav {
   border-radius: 100px;
 }
 
+.hero .container,
 main .container,
 footer .container {
   padding-block: 2rem;
@@ -180,7 +180,6 @@ footer .container {
 .hero__title {
   font-size: 50px;
   font-weight: 700;
-  font-family: 'Oswald', sans-serif;
 }
 .hero__text {
   font-size: 16px;
@@ -196,7 +195,7 @@ footer .container {
   border-radius: 100px;
 }
 
-.section-1 .col {
+.section-1 .col + .col {
   margin-top: 2em;
 }
 .col__header {
@@ -224,6 +223,21 @@ footer .container {
 }
 .sidebar .col__header {
   color: var(--clr-bg-100);
+}
+
+.footer__title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+}
+.footer__section {
+  margin-top: 2em;
+}
+.footer__header {
+  font-size: 21px;
+}
+.footer__text{
+  font-size: 16px;
 }
 
 /* media:
