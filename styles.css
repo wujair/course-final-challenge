@@ -173,9 +173,6 @@ footer .container {
   padding-block: 2rem;
 }
 
-.hero {
-  min-height: calc(100vh - calc(2em + 35px));
-}
 .hero > .container {
   display: grid;
   align-content: center;
@@ -204,7 +201,7 @@ footer .container {
 }
 .col__header {
   color: var(--clr-accent);
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
   font-weight: 900;
 }
@@ -214,6 +211,17 @@ footer .container {
   text-align: center;
 }
 
+.section__title {
+  font-size: 32px;
+}
+.section__text {
+  font-size: 18px;
+}
+
+.sidebar__col {
+  padding: 1.2em;
+  margin-block: 1em;
+}
 .sidebar .col__header {
   color: var(--clr-bg-100);
 }
@@ -222,15 +230,23 @@ footer .container {
 .hero__title
 mid: fz 70px fw 900
 large: fz 90px fw 900
-
 .hero__text
 mid and large: fz 20px
 
-
+.col__header
+mid and large: 30px
 .col__text
 mid and large: 18px
+
+.section__title
+mid and large: 36px
+.section__text
+mid and large: 21px
 */
 
 /* .row {
-   display: flex;
- } */
+  display: flex;
+} */
+/* .hero {
+  min-height: calc(100vh - calc(2em + 35px));
+} */
