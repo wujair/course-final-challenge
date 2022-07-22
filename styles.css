@@ -63,7 +63,10 @@ button:hover,
 button:focus {
   opacity: 0.75;
 }
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Oswald', sans-serif;
   margin: 0;
 }
@@ -195,8 +198,8 @@ footer .container {
   border-radius: 100px;
 }
 
-.section-1 .col + .col {
-  margin-top: 2em;
+.section-1 .col {
+  margin-block: 2em;
 }
 .col__header {
   color: var(--clr-accent);
@@ -236,10 +239,42 @@ footer .container {
 .footer__header {
   font-size: 21px;
 }
-.footer__text{
+.footer__text {
   font-size: 16px;
 }
 
+@media (min-width: 700px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    height: auto;
+    position: relative;
+  }
+  .nav__list {
+    display: flex;
+    margin: 0;
+  }
+  .nav__list--primary {
+    margin-inline: auto 2em;
+  }
+  .nav__item {
+    margin: 0 0 0 1.5em;
+  }
+
+  .section-1 .col {
+    width: 30%;
+  }
+}
 /* media:
 .hero__title
 mid: fz 70px fw 900
