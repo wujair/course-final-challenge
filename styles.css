@@ -52,6 +52,11 @@ body {
   /* added for nav-toggle positioning */
   position: relative;
 }
+.hero .container,
+main .container,
+footer .container {
+  padding-block: 2rem;
+}
 
 /* TYPOGRAPHY */
 img {
@@ -66,9 +71,11 @@ button:focus {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.cta-btn {
   font-family: 'Oswald', sans-serif;
   margin: 0;
+  line-height: 1;
 }
 p {
   line-height: 1.6;
@@ -141,7 +148,7 @@ nav {
   position: relative;
 }
 
-/* EVERYTHING ELSE */
+/* NAVIGATION BAR */
 .logo {
   height: 30px;
 }
@@ -170,15 +177,10 @@ nav {
   border-radius: 100px;
 }
 
-.hero .container,
-main .container,
-footer .container {
-  padding-block: 2rem;
-}
-
-.hero > .container {
+/* HERO */
+.hero {
   display: grid;
-  align-content: center;
+  align-items: center;
 }
 .hero__title {
   font-size: 50px;
@@ -194,10 +196,11 @@ footer .container {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 900;
-  padding: 0.75em 2em;
+  padding: 0.5em 1.5em;
   border-radius: 100px;
 }
 
+/* SECTION 1 AND 2 */
 .section-1 .col {
   margin-block: 2em;
 }
@@ -228,6 +231,7 @@ footer .container {
   color: var(--clr-bg-100);
 }
 
+/* FOOTER */
 .footer__title {
   text-align: center;
   font-size: 26px;
@@ -243,12 +247,12 @@ footer .container {
   font-size: 16px;
 }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .row {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
-
 
   .nav-toggle {
     display: none;
@@ -271,31 +275,57 @@ footer .container {
     margin: 0 0 0 1.5em;
   }
 
+  .hero {
+    min-height: calc(100vh - calc(72px));
+  }
+  .hero__col {
+    width: 45%;
+  }
+  .hero__title {
+    font-size: 70px;
+    font-weight: 800;
+  }
+  .hero__content {
+    align-self: flex-end;
+    width: 50%;
+  }
+  .hero__text {
+    font-size: 20px;
+  }
+  .cta-btn {
+    font-size: 24px;
+    padding-block: 0.25em;
+  }
+
   .section-1 .col {
     width: 30%;
+  }
+  .col__header {
+    font-size: 30px;
+  }
+  .col__text {
+    font-size: 18px;
+  }
+
+  .primary-content {
+    width: 62%;
+  }
+  .section__title {
+    font-size: 36px;
+  }
+  .section__text {
+    font-size: 21px;
   }
 }
 /* media:
 .hero__title
-mid: fz 70px fw 900
-large: fz 90px fw 900
-.hero__text
-mid and large: fz 20px
+large: fz 90px fw 900 
 
-.col__header
-mid and large: 30px
-.col__text
-mid and large: 18px
+*****gotta change the size ration between the two col in hero when the screen gets large***
+
 
 .section__title
 mid and large: 36px
 .section__text
 mid and large: 21px
 */
-
-/* .row {
-  display: flex;
-} */
-/* .hero {
-  min-height: calc(100vh - calc(2em + 35px));
-} */
