@@ -236,17 +236,20 @@ nav {
   text-align: center;
   font-size: 26px;
   font-weight: 900;
+  margin-bottom: 1em;
 }
 .footer__section {
-  margin-top: 2em;
+  margin: 2em 1em 0 1em;
 }
 .footer__header {
   font-size: 21px;
 }
 .footer__text {
   font-size: 16px;
+  max-width: 40ch;
 }
 
+/* MID SCREEN SIZE */
 @media screen and (min-width: 700px) {
   .row {
     display: flex;
@@ -297,7 +300,8 @@ nav {
     padding-block: 0.25em;
   }
 
-  .section-1 .col {
+  .section-1 .col,
+  .sidebar__col {
     width: 30%;
   }
   .col__header {
@@ -307,8 +311,8 @@ nav {
     font-size: 18px;
   }
 
-  .primary-content {
-    width: 62%;
+  .section-2.row {
+    flex-direction: column;
   }
   .section__title {
     font-size: 36px;
