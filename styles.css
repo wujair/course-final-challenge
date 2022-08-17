@@ -42,7 +42,7 @@
 /* CONTAINER */
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
 }
 .container {
@@ -73,7 +73,7 @@ h2,
 h3,
 h4,
 .cta-btn {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   margin: 0;
   line-height: 1;
 }
@@ -88,7 +88,7 @@ header {
 
 nav {
   width: 100%;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 /* HAMBURGER BUTTON STUFF */
@@ -123,7 +123,7 @@ nav {
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   width: 100%;
 }
 
@@ -336,7 +336,7 @@ nav {
   .hero__content {
     width: 40%;
   }
-  
+
   .section-2.row {
     flex-direction: row;
   }
@@ -353,5 +353,3 @@ nav {
     width: 100%;
   }
 }
-
-
