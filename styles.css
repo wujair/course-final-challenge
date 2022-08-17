@@ -185,6 +185,7 @@ nav {
 .hero__title {
   font-size: 50px;
   font-weight: 700;
+  white-space: nowrap;
 }
 .hero__text {
   font-size: 16px;
@@ -194,6 +195,7 @@ nav {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
+  white-space: nowrap;
   font-size: 18px;
   font-weight: 900;
   padding: 0.5em 1.5em;
@@ -249,7 +251,7 @@ nav {
   max-width: 40ch;
 }
 
-/* MID SCREEN SIZE */
+/* MID SIZE SCREEN */
 @media screen and (min-width: 700px) {
   .row {
     display: flex;
@@ -282,7 +284,7 @@ nav {
     min-height: calc(100vh - calc(72px));
   }
   .hero__col {
-    width: 45%;
+    width: 55%;
   }
   .hero__title {
     font-size: 70px;
@@ -290,7 +292,7 @@ nav {
   }
   .hero__content {
     align-self: flex-end;
-    width: 50%;
+    width: 35%;
   }
   .hero__text {
     font-size: 20px;
@@ -321,15 +323,35 @@ nav {
     font-size: 21px;
   }
 }
-/* media:
-.hero__title
-large: fz 90px fw 900 
 
-*****gotta change the size ration between the two col in hero when the screen gets large***
+/* LARGE SIZE SCREEN */
+@media screen and (min-width: 1000px) {
+  .hero__title {
+    font-size: 90px;
+    font-weight: 900;
+  }
+  .hero__col {
+    width: 50%;
+  }
+  .hero__content {
+    width: 40%;
+  }
+  
+  .section-2.row {
+    flex-direction: row;
+  }
+
+  .primary-content {
+    width: 60%;
+  }
+
+  .sidebar.row {
+    flex-direction: column;
+    width: 30%;
+  }
+  .sidebar__col {
+    width: 100%;
+  }
+}
 
 
-.section__title
-mid and large: 36px
-.section__text
-mid and large: 21px
-*/
